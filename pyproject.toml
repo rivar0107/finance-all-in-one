@@ -48,6 +48,9 @@ dev = [
 [project.scripts]
 finance-all-in-one = "cli:main"
 
+[tool.setuptools]
+packages = ["core", "sources", "data_types", "utils"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
